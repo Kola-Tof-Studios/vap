@@ -9,7 +9,17 @@ darkgray='\033[1;30m'
 NC='\033[0m'
 lightgreen='\033[1;32m'
 gray='\033[0;37m'
-lighray='\033[0;37m'
+lightgray='\033[0;37m'
+
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+FILE_NAME=$(basename -- "$0")
+FILE_PATH="${SCRIPT_DIR}/${FILE_NAME}"
+#echo "${FILE_PATH}"
+
+BACKUPTIME=`date +%b-%d-%y` 
+SCRIPT_DIR="$SCRIPT_DIR/backup.txt"
+cp $FILE_PATH $SCRIPT_DIR
+
 
 printf "${lightgreen}"
 echo " "
