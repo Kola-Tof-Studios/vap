@@ -9,6 +9,7 @@ darkgray='\033[1;30m'
 NC='\033[0m'
 lightgreen='\033[1;32m'
 gray='\033[0;37m'
+lighray='\033[0;37m'
 
 printf "${lightgreen}"
 echo " "
