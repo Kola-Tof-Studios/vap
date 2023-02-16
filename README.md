@@ -1,5 +1,5 @@
 
-![App Logo](https://kolatof.eu/petko/petko.png)
+![App Logo](https://kolatof.eu/petko/petko1.png)
 
 
 # VIRTUAL ASSISTANT PETKO
