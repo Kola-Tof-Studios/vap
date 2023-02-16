@@ -1,38 +1,22 @@
 #!/bin/bash
 
-green='\033[0;32m'
-red='\033[0;31m'
-yellow='\033[0;33m'
-purple='\033[0;35m'
-blue='\033[0;34m'
-darkgray='\033[1;30m'
-NC='\033[0m'
-lightgreen='\033[1;32m'
-gray='\033[0;37m'
+# VAP - Virtual Assistant Petko
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 FILE_NAME=$(basename -- "$0")
 FILE_PATH="${SCRIPT_DIR}/${FILE_NAME}"
-#echo "${FILE_PATH}"
 
 BACKUPTIME=`date +%b-%d-%y` 
 SCRIPT_DIR="$SCRIPT_DIR/backup/$BACKUPTIME-backup.txt"
 cp $FILE_PATH $SCRIPT_DIR
 
+DIR="${BASH_SOURCE%/*}"
+if [[ ! -d "$DIR" ]]; 
+then 
+DIR="$PWD"; 
+fi
+. "$DIR/scripts/start.sh"
 
-printf "${lightgreen}"
-echo " "
-echo " "
-echo " "
-echo "  _____     _   _                               _     _             _        "
-echo " |  __ \   | | | |                /\           (_)   | |           | |       "
-echo " | |__) |__| |_| | _____         /  \   ___ ___ _ ___| |_ ___ _ __ | |_ __ _ "
-echo " |  ___/ _ \ __| |/ / _ \       / /\ \ / __/ __| / __| __/ _ \ '_ \| __/ _\ |"
-echo " | |  |  __/ |_|   < (_) |     / ____ \\__ \__ \ \__ \ ||  __/ | | | || (_| |"
-echo " |_|   \___|\__|_|\_\___/     /_/    \_\___/___/_|___/\__\___|_| |_|\__\__,_|"
-echo "                                                                             "
-echo "                                                                             "
-echo " "
 printf "${green}Zdrasti, $USER ${NC}"
 echo " "
 echo " "

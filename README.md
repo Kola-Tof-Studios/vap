@@ -2,9 +2,9 @@
 ![App Logo](https://kolatof.eu/petko/petko.png)
 
 
-# PETKO ASSISTENTA
+# VIRTUAL ASSISTANT PETKO
 
-Petko Assistenta is a powerful virtual assistant under development, written in the Bash scripting language. It's main goal is to provide unique user-experience while keeping everything exempliary simple.
+VAP (Virtual Assistant Petko) is a powerful virtual assistant under development, written in the Bash scripting language. It's main goal is to provide unique user-experience while keeping everything exempliary simple.
 
 
 ## Deployment
@@ -21,7 +21,7 @@ To deploy this project run
 Clone the project
 
 ```bash
-  git clone https://github.com/Kola-Tof-Studios/petko-assistenta.git
+  git clone https://github.com/Kola-Tof-Studios/vap.git
 ```
 
 Go to the project directory
